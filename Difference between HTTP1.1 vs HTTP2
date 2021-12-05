@@ -1,0 +1,14 @@
+HTTP1.1
+
+1)The messages send and received by the client/server are Readable.
+2)No need of termination is required in the single request & response, with the help of header [Keep-alive] 
+connection reuse is possible with multiple request and response per TCP connection.
+3)Pipelining were implemented, this allows the second request to be send before the first response fully transmitted.
+4)Pipelining lower the Latency [delay] between user’s and web application communications.
+
+
+HTTP2.0
+
+1)The messages are encapsulated [hiding] in frames like binary structure in the form of 0’s and 1’s .So, Non-Readable.
+2)Supports Multiplexing (i.e) multiple request and response are sending and received per TCP connections.
+3)Provides features called Server Push, which allows a server to populate [enter] data in a client cache [storing].
